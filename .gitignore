@@ -73,6 +73,11 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
+.dotnet/
+
+# Project-local generated/vendor files
+dependencies/
+.idea/
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
