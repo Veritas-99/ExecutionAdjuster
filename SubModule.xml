@@ -14,13 +14,25 @@
   </DependedModules>
   <SubModules>
     <SubModule>
-      <Name value="Execution Adjuster" />
+      <Name value="ExecutionAdjuster" />
       <DLLName value="ExecutionAdjusterNS2.dll" />
       <SubModuleClassType value="ExecutionAdjuster.MainModule" />
       <Tags>
-        <Tag value="DedicatedServerType" />
-        <Tag value="Client" />
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
       </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="MCMv5" />
+      <DLLName value="MCMv5.dll" />
+      <SubModuleClassType value="MCM.MCMSubModule" />
+      <Tags />
+    </SubModule>
+    <SubModule>
+      <Name value="MCMv5 Basic Implementation" />
+      <DLLName value="MCMv5.dll" />
+      <SubModuleClassType value="MCM.Internal.MCMImplementationSubModule" />
+      <Tags />
     </SubModule>
   </SubModules>
 </Module>
