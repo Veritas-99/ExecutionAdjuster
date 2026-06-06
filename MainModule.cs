@@ -244,7 +244,7 @@ namespace ExecutionAdjuster
                             }
                             if (partyBelongedTo != MobileParty.MainParty)
                             {
-                                partyBelongedTo.Ai.SetMoveModeHold();
+                                partyBelongedTo.SetMoveModeHold();
                                 if (victim.Clan != null && victim.Clan.IsRebelClan)
                                     DestroyPartyAction.Apply((PartyBase)null, partyBelongedTo);
                             }
