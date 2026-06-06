@@ -20,10 +20,12 @@
 
   <ItemGroup>
     <Content Include="SubModule.xml" CopyToOutputDirectory="Never" CopyToPublishDirectory="Never" />
+    <Content Include="Image.png" CopyToOutputDirectory="Never" CopyToPublishDirectory="Never" />
   </ItemGroup>
 
-  <Target Name="CopySubModuleXml" AfterTargets="Build">
+  <Target Name="CopyModuleFiles" AfterTargets="Build">
     <Copy SourceFiles="SubModule.xml" DestinationFolder="bin\ExecutionAdjuster\" />
+    <Copy SourceFiles="Image.png" DestinationFolder="bin\ExecutionAdjuster\" />
   </Target>
 
 </Project>
